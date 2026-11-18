@@ -1,0 +1,72 @@
+{
+  "api_version": "0.6.0",
+  "status": "insufficient_evidence",
+  "upload_id": "e71b4a9a8e824d54955b86b493d5ebb6",
+  "filename": "blank.mp4",
+  "size_bytes": 18349,
+  "sha256": "ca6e5cca36cff71e5afbe4f7c4ef13a6b7a1b6943fb0b7fd14165bb39ccc9165",
+  "stored": false,
+  "analysis_performed": false,
+  "prediction": null,
+  "reason": "Only 0 of 16 sampled frames provided a usable single face; at least 8 are required. Choose a clip with one clearly visible face.",
+  "video": {
+    "validation": "basic_passed",
+    "width": 512,
+    "height": 512,
+    "fps": 12.0,
+    "reported_frame_count": 48,
+    "estimated_duration_seconds": 4.0,
+    "frames_checked": 3,
+    "full_decode_checked": false
+  },
+  "model": {
+    "id": "deepfakebench-xception-v1.0.1",
+    "checkpoint_sha256": "dd61186f9ac8e99aae85982cae338b555dfaeef042f6b699e5a55cae3998ba47",
+    "device": "cpu"
+  },
+  "preprocessing": {
+    "version": "deepguard-yunet-xception-align-v1",
+    "sampling_method": "uniform_reported_frame_indices",
+    "target_frames": 16,
+    "sampled_frames": 16,
+    "usable_faces": 0,
+    "minimum_usable_faces": 8,
+    "requested_frame_indices": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      25,
+      28,
+      31,
+      34,
+      37,
+      40,
+      43,
+      47
+    ],
+    "counts": {
+      "no_face": 16
+    },
+    "crop_size": [
+      256,
+      256
+    ],
+    "selection_policy": "single_face_only",
+    "face_tracking_performed": false,
+    "frames_retained": false,
+    "crops_retained": false,
+    "full_decode_checked": false
+  },
+  "frame_scores": [],
+  "timing_seconds": {
+    "preprocessing": 0.19297165400007543,
+    "inference": 5.257999987406947e-06,
+    "processing": 0.19297691200006284,
+    "server_request": 0.20506616100010433
+  }
+}
